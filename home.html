@@ -53,8 +53,12 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td colspan="5"></td>
-                    <td colspan="1">
+                    <td colspan="7"></td>
+                    <td colspan="2" style="visibility: hidden;" id="hiddenfeature" align="left">
+                        <button onclick="document.getElementById('me').src='img/pg8.jpg'" style="background: #7E99A3;">DRESS UP</button>
+                        <button onclick="document.getElementById('me').src='img/pg8undress.png'" style="background: #7E99A3;">UNDRESS</button>
+                    </td>
+                    <td colspan="1" align="right">
                         <script type="text/javascript">
                             var clicks=0;
                             function onClick(){
@@ -66,12 +70,9 @@
                                 }
                             }
                         </script>
-                        <button type="button" onClick="onClick();check();" class="navigation">Click me</button>
+                        <button type="button" onClick="onClick();check();" style="background: #7E99A3; position-anchor: sticky;">O</button>
                     </td>
-                    <td colspan="5" style="visibility: hidden;" id="hiddenfeature">
-                        <button onclick="document.getElementById('me').src='img/pg8.jpg'" class="navigation">DRESS UP</button>
-                        <button onclick="document.getElementById('me').src='img/pg8undress.png'" class="navigation">UNDRESS</button>
-                    </td>
+                    
                 </tr>
             </table>
         </font>
