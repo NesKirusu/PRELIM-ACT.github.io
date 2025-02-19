@@ -25,10 +25,12 @@
                             <td width="30%"><img src="img/me-banner.png" alt="profile" id="banner" width="100%" align="center"></td>
                             <script type="text/javascript">
                                 var state=false;
+                                var audio = new Audio('media/rizz.mp3');
                                 function hover(){
                                     if(state==false){
                                         state=true;
                                         document.getElementById('banner').src='img/me-banner2.png';
+                                        audio.play()
                                     }
                                     else{
                                         state=false;

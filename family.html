@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td colspan="2"></td>
-                <td colspan="6" align="center"><font>We are the Barretto Family, We love to go out and eat together from time to time.
+                <td colspan="6" align="center"><font>We are the, <span onclick="family()">BARRETTO FAMILY</span>, We love to go out and eat together from time to time.
                         Even if we sometimes don't agree on something we always come back to each other. 
                 </font>
                 </td>
@@ -47,5 +47,13 @@
                 </td>
             </tr>
         </table>
+        <div id="family" class="family">HELLO</div>
+        <script type="text/javascript">
+            var audio = new Audio('media/see you again.mp3');
+            function family(){
+                let image = document.getElementById('family').style.display='block';
+                audio.play();
+            }
+        </script>
     </body>
 </html>
