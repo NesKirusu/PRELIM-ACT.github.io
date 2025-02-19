@@ -20,5 +20,42 @@ font{
 }
 .hover-anim:hover{
     transform: translateY(-10px);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.divider{
+    border-top: 2px solid;
+    border-radius: 2px;
+    border-color: black;
+}
+.hiddensplash{
+    display: none;
+    width: 50%;
+    height: 0px;
+}
+.hiddensplash:after{
+    opacity: 0;
+    position: fixed;
+    overflow: none;
+    box-shadow: 5px 5px 10px black;
+    content: "HIDDEN FEATURE UNLOCKED";
+    text-align: center;
+    justify-items: middle;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 1000px;
+    height: 100px;
+    background: #4C585B;
+    translate: 25% 50%;
+    animation: splash 6s;
+}
+@keyframes splash{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }

@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body bgcolor="#7E99A3">
+        <div id="hiddensplash" class="hiddensplash"></div>
         <font>
             <table border="0" width="100%" align="center">
                 <tr>
@@ -30,8 +31,11 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td><div class="divider"></div></td>
+                            </tr>
+                            <tr>
                                 <td align="center">
-                                    <font size="20px">CHRISTIAN KEVIN A. BARRETTO</font>
+                                    <font size="30px">CHRISTIAN KEVIN A. BARRETTO</font>
                                 </td>
                             </tr>
                             <tr>
@@ -67,14 +71,26 @@
                             function check(){
                                 if(clicks >= 10){
                                     document.getElementById('hiddenfeature').style.visibility='visible';
+                                    document.getElementById('hiddensplash').style.display='block';
                                 }
                             }
                         </script>
-                        <button type="button" onClick="onClick();check();" style="background: #7E99A3; position-anchor: sticky;">O</button>
+                        <button type="button" onClick="onClick();check();" style="background: #7E99A3; position-anchor: sticky;">I</button>
                     </td>
                     
                 </tr>
             </table>
         </font>
+        <br><br>
+        <table border="0" width="100%" class="shadow">
+            <tr>
+                <td align=center>
+                    <font>
+                    Cel: +0928641641<br>
+                    Email: kevin123@gmail.com
+                    </font>
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
