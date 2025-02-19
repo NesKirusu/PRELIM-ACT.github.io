@@ -103,10 +103,27 @@
                 <td align=center>
                     <font>
                     Cel: +0928641641<br>
-                    Email: kevin123@gmail.com
+                    Email: <div onclick="jumpscare()">kevin123@gmail.com</div>
                     </font>
                 </td>
             </tr>
         </table>
+        <div id="jumpscare" class="jumpscare"></div>
+        <div><audio src="img/jumpscare.mp3" id="audio"></audio></div>
+        <script type="text/javascript">
+            var bool='true';
+            function jumpscare(){
+                if(bool=='true'){
+                    document.getElementById('jumpscare').style.display='block';
+                    bool='false';
+                    document.getElementById('audio').autoplay;
+                }
+                else{
+                    document.getElementById('jumpscare').style.display='block';
+                    bool='true'
+                    document.getElementById('audio').autoplay;
+                }
+            }
+        </script>
     </body>
 </html>
