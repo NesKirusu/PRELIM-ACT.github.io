@@ -1,10 +1,10 @@
 @font-face {
     font-family: ClashGrotesk;
-    src: url(font\ClashGotesk.woff) format('woff');
+    src: url(font\ClashGotesk.woff) format('.woff');
 }
 font{
     font-family: ClashGrotesk, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
+
 }
 .removestyle{
     font-family: ClashGrotesk, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -37,7 +37,7 @@ font{
     position: fixed;
     overflow: none;
     box-shadow: 5px 5px 10px black;
-    content: "HIDDEN FEATURE UNLOCKED";
+    content: "** HIDDEN FEATURE UNLOCKED **";
     text-align: center;
     justify-items: middle;
     font-size: 50px;
@@ -61,7 +61,8 @@ font{
     width: auto;
     height: 100vh;
     background-image: url(img/me-banner.png);
-    background-size: cover;
+    background-size: 300vh;
+    background-position-y: -200px;
     transform: translateY(-600px);
     animation: jumpscare 5s linear;
 }

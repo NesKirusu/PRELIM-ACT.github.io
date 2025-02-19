@@ -109,20 +109,11 @@
             </tr>
         </table>
         <div id="jumpscare" class="jumpscare"></div>
-        <div><audio src="img/jumpscare.mp3" id="audio"></audio></div>
         <script type="text/javascript">
-            var bool='true';
+            var audio = new Audio('img/jumpscare.mp3');
             function jumpscare(){
-                if(bool=='true'){
-                    document.getElementById('jumpscare').style.display='block';
-                    bool='false';
-                    document.getElementById('audio').autoplay;
-                }
-                else{
-                    document.getElementById('jumpscare').style.display='block';
-                    bool='true'
-                    document.getElementById('audio').autoplay;
-                }
+                document.getElementById('jumpscare').style.display='block';
+                audio.play();
             }
         </script>
     </body>
