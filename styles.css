@@ -78,23 +78,26 @@ font{
     opacity: 0;
     overflow: hidden;
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     translate: 0% -110%;
     box-shadow: 4px 4px 10px black;
     transform: scale(100%);
     background-image: url(img/vindiesel.jpg);
     background-size: cover;
     background-position-x: -500px;
-    animation: splash 10s linear;
+    animation: splash 25s linear;
 }
 @keyframes splash{
     0%{
         opacity: 0;
     }
-    10%{
+    20%{
+        opacity: 0;
+    }
+    21%{
         opacity: 1;
     }
-    90%{
+    95%{
         opacity: 1;
     }
     100%{

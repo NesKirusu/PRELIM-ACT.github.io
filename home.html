@@ -25,10 +25,16 @@
                         <table border="0" width="100%" height="100%">
                             <tr>
                                 <td align="center">
-                                    <font>
-                                        This webpage is all about me and my family.
+                                    <font size="4px">
+                                        This webpage is all about me and my family. This website also contains my interests on different things.
+                                         Ways to contact me. Lasty some clips with me and my friends playing various games. 
+                                         I have also hidden easter eggs around my website. 
                                     </font>
                                 </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td height="50px"></td>
                             </tr>
                             <tr>
                                 <td><div class="divider"></div></td>
@@ -42,8 +48,11 @@
                                 <td><div class="divider"></div></td>
                             </tr>
                             <tr>
+                                <td height="50px"></td>
+                            </tr>
+                            <tr>
                                 <td align="center">
-                                    <font>Making the world a better place one code at a time.</font>
+                                    <font size="5px">"Making the world a better place one code at a time."</font>
                                 </td>
                             </tr>
                         </table>
@@ -60,6 +69,9 @@
                     <td></td>
                 </tr>
                 <tr>
+                    <td height="50px"></td>
+                </tr>
+                <tr>
                     <td colspan="7"></td>
                     <td colspan="2" style="visibility: hidden;" id="hiddenfeature" align="left">
                         <button onclick="document.getElementById('me').src='img/pg8.jpg'" style="background: #7E99A3;">DRESS UP</button>
@@ -68,6 +80,7 @@
                     <td colspan="1" align="right">
                         <script type="text/javascript">
                             var clicks=0;
+                            var audio = new Audio('media/music.mp3')
                             function onClick(){
                                 clicks+= 1;
                             }
@@ -75,6 +88,7 @@
                                 if(clicks >= 10){
                                     document.getElementById('hiddenfeature').style.visibility='visible';
                                     document.getElementById('hiddensplash').style.display='block';
+                                    audio.play();
                                 }
                             }
                         </script>
